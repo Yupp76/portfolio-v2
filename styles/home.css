@@ -1,0 +1,176 @@
+body {
+  height: 1500px;
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+header .hero__content {
+  margin-right: 1.5rem;
+}
+
+.s01__content .prgh,
+.s02__content .prgh {
+  max-width: 768px;
+}
+
+.s01__grid,
+.s02__grid {
+  display: grid;
+  margin: 3rem 0;
+  gap: 1rem;
+}
+
+.s01__grid {  
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.s02__grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 925px) {
+  .s02__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .s01__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header .hero__cover {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .s01__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .s02__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .s01__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .s03__phone {    
+    grid-area: 3/1/3/3;
+  }
+}
+
+.s01__grid .s01__cardContent {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  padding: 2rem;
+  border: 1px solid #454545;
+  border-bottom: 4px solid var(--green-color);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.88) 0%, #000000 100%),
+    #777777;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s01__grid .s01__cardContent span:last-child {
+    font-size: 30px;
+    color: white;
+}
+
+.s02__projectCard {
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 230px;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.s02__projectCard ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s02__projectCard ul:first-child li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.s02__projectCard ul:first-child li a span:first-child {
+  width: 0%;
+  display: block;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+  transform-origin: left;
+  margin-right: 0.5rem;
+}
+
+.s02__projectCard ul:first-child li a:hover span:first-child {
+  width: 100%;
+  text-decoration: underline;
+}
+
+.s02__projectCard ul:first-child li a span:last-child {
+  font-size: 20px;
+  display: contents;
+}
+
+.s02__projectCard:nth-child(1) {
+  background: linear-gradient(180deg, rgba(255, 245, 211, 0.74) 0%, #FBD397 100%), #DB6666;
+}
+.s02__projectCard:nth-child(2) {
+  background: linear-gradient(180deg, rgba(162, 164, 255, 0.74) 0%, #7A7CDA 100%), #E0E0E0;
+}
+.s02__projectCard:nth-child(3) {
+  background: linear-gradient(180deg, rgba(206, 141, 237, 0.74) 0%, #CA80C7 100%), #E0E0E0;
+}
+
+.s02__projectCard .heading__norm {
+  margin: 0;
+  color: black;
+  font-size: 23px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.s02__projectCard ul li.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.s02__projectCard ul:last-child {
+  padding: 0 2rem;
+}
+
+.s03__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.s03__title {
+  grid-area: 1/1/2/3;
+}
+
+@media screen and (max-width: 425px) {
+  .heading__xlg {
+    font-size: 67px;
+  }
+}

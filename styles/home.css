@@ -131,10 +131,10 @@ header .hero__content {
 }
 
 .s02__projectCard:nth-child(1) {
-  background: linear-gradient(180deg, rgba(255, 245, 211, 0.74) 0%, #FBD397 100%), #DB6666;
+  background: linear-gradient(180deg, rgba(162, 164, 255, 0.74) 0%, #7A7CDA 100%), #E0E0E0;
 }
 .s02__projectCard:nth-child(2) {
-  background: linear-gradient(180deg, rgba(162, 164, 255, 0.74) 0%, #7A7CDA 100%), #E0E0E0;
+  background: linear-gradient(180deg, rgba(255, 245, 211, 0.74) 0%, #FBD397 100%), #DB6666;
 }
 .s02__projectCard:nth-child(3) {
   background: linear-gradient(180deg, rgba(206, 141, 237, 0.74) 0%, #CA80C7 100%), #E0E0E0;
@@ -145,7 +145,6 @@ header .hero__content {
   color: black;
   font-size: 23px;
   font-weight: 700;
-  text-align: left;
   padding: 0 2rem;
 }
 
@@ -156,6 +155,20 @@ header .hero__content {
 
 .s02__projectCard ul:last-child {
   padding: 0 2rem;
+}
+
+.s02__projectCard div {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.s02__projectCard div span {
+    padding: 0 2rem;
+    margin-top: 0.5rem;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .s03__grid {
